@@ -1,9 +1,21 @@
 import "./App.css";
 import { motion } from "framer-motion";
 
+import { FaReact } from "react-icons/fa";
+import { RiJavascriptLine } from "react-icons/ri";
+import { TbBrandTypescript } from "react-icons/tb";
+import { AiOutlinePython } from "react-icons/ai";
+import { RiFlutterFill } from "react-icons/ri";
+import { SiFlask } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
+import { AiFillInstagram } from "react-icons/ai";
+
 function App() {
   return (
     <>
+      {/* TOP Banner */}
       <div className="flex bg-dark-4 items-center justify-center h-screen">
         <motion.div
           className="text-center text-white space-y-4"
@@ -11,7 +23,7 @@ function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="text-lg md:text-xl tracking-[1.11em] font-inter uppercase">
+          <h2 className="text-base tracking-[1em] md:text-xl md:tracking-[1.11em] font-inter uppercase">
             Software Engineer
           </h2>
           <h1 className="text-7xl md:text-8xl font-custom font-extrabold uppercase">
@@ -26,9 +38,10 @@ function App() {
         </motion.div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center md:items-start p-8 max-w-6xl mx-auto space-y-8 md:space-y-0 md:space-x-12 h-screen justify-center">
+      {/* INTRODUCTION */}
+      <div className="flex flex-col md:flex-row items-center max-lg:p-8 max-w-6xl mx-auto space-y-8 md:space-y-0 md:space-x-12 h-screen justify-center">
         {/* Profile picture  */}
-        <div className="w-52 rounded-3xl overflow-hidden flex-shrink-0">
+        <div className="w-64 max-md:hidden lg:w-72 rounded-3xl overflow-hidden flex-shrink-0">
           <img
             src="/public/profile.jpg"
             alt="Yerhanat"
@@ -67,24 +80,54 @@ function App() {
             </div>
 
             {/* Skills Section and Experience  */}
-            <div className="flex flex-col flex-none w-72">
+            <div className="flex flex-col flex-none w-52 md:w-52   lg:w-64">
               {/* SKILLS */}
               <div className="space-y-4">
                 <h2 className="text-2xl font-extrabold">SKILLS</h2>
-                <div className="flex flex-wrap items-center w-52">
-                  <div className="bg-primary text-white rounded-md p-2 w-12 h-12 mr-2 mb-2"></div>
-                  <div className="bg-primary text-white rounded-md p-2 w-12 h-12 mr-2 mb-2">
-                    Type
-                  </div>
-                  <div className="bg-primary text-white rounded-md p-2 w-12 h-12 mr-2 mb-2">
-                    CSS
-                  </div>
-                  <div className="bg-primary text-white rounded-md p-2 w-12 h-12 mr-2 mb-2">
-                    SQL
-                  </div>
-                  <div className="bg-primary text-white rounded-md p-2 w-12 h-12 mr-2 mb-2">
-                    Python
-                  </div>
+                <div className="flex flex-wrap items-center">
+                  <motion.div
+                    whileHover={{ scale: 1.1, rotateZ: 10 }}
+                    className="bg-primary rounded-md w-12 h-12 mr-2 mb-2 p-2 shadow-slate-600 shadow-lg"
+                  >
+                    <RiJavascriptLine color="white" size="2em" />
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.1, rotateZ: 10 }}
+                    className="bg-primary rounded-md w-12 h-12 mr-2 mb-2 p-2 shadow-slate-600 shadow-lg"
+                  >
+                    <TbBrandTypescript color="white" size="2em" />
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.1, rotateZ: 10 }}
+                    className="bg-primary rounded-md w-12 h-12 mr-2 mb-2 p-2 shadow-slate-600 shadow-lg"
+                  >
+                    <AiOutlinePython color="white" size="2em" />
+                  </motion.div>
+
+                  <motion.div
+                    whileHover={{ scale: 1.1, rotateZ: 10 }}
+                    className="bg-primary rounded-md w-12 h-12 mr-2 mb-2 p-2 shadow-slate-600 shadow-lg"
+                  >
+                    <FaReact color="white" size="2em" />
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.1, rotateZ: 10 }}
+                    className="bg-primary rounded-md w-12 h-12 mr-2 mb-2 p-2 shadow-slate-600 shadow-lg"
+                  >
+                    <RiFlutterFill color="white" size="2em" />
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.1, rotateZ: 10 }}
+                    className="bg-primary rounded-md w-12 h-12 mr-2 mb-2 p-2 shadow-slate-600 shadow-lg"
+                  >
+                    <SiFlask color="white" size="2em" />
+                  </motion.div>
+                  <motion.div
+                    whileHover={{ scale: 1.1, rotateZ: 10 }}
+                    className="bg-primary rounded-md w-12 h-12 mr-2 mb-2 p-2 shadow-slate-600 shadow-lg"
+                  >
+                    <SiMysql color="white" size="2em" />
+                  </motion.div>
                 </div>
               </div>
               {/* Experience Section  */}
@@ -97,19 +140,39 @@ function App() {
               </div>
             </div>
           </div>
+
           {/* Social Links */}
-          <div className="flex space-x-4 mt-4 text-gray-700">
-            <a href="tel:+123456789" className="flex items-center">
-              📞 <span className="ml-2">+123456789</span>
-            </a>
-            <a href="mailto:email@example.com" className="flex items-center">
-              📧 <span className="ml-2">email@example.com</span>
-            </a>
+          <div className="flex space-x-8 md:space-x-10 mt-12 text-gray-700">
+            {/* whatsapp */}
             <a
-              href="https://www.linkedin.com/in/username"
-              className="flex items-center"
+              href="https://wa.me/+77089647233"
+              className="flex items-center text-primary hover:text-primary"
+              target="_black"
             >
-              🔗 <span className="ml-2">linkedin.com/in/username</span>
+              <IoLogoWhatsapp />
+              <span className="ml-1 text-sm font-normal">+77089647233</span>
+            </a>
+
+            {/* email */}
+            <a
+              href="mailto:erhanat0304@gmail.com"
+              className="flex items-center text-primary hover:text-primary"
+              target="_black"
+            >
+              <MdEmail />
+              <span className="ml-1 text-sm font-normal">
+                erhanat0304@gmail.com
+              </span>
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/erhanat_yrymbai"
+              className="flex items-center text-primary hover:text-primary"
+              target="_black"
+            >
+              <AiFillInstagram />
+              <span className="ml-1 text-sm font-normal">erhanat_yrymbai</span>
             </a>
           </div>
         </div>
