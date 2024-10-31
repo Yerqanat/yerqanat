@@ -43,7 +43,8 @@ module.exports = {
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
-        custom:['"Embed code"', "sans-serif"]
+        bebas:['"Bebas Neue"', "sans-serif"],
+        poppins: ['"Poppins"',"sans-serif"],
       },
       keyframes: {
         "accordion-down": {
