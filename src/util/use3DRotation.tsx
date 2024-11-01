@@ -31,7 +31,6 @@ const use3DRotation = (rotationRange: number) => {
   };
 
   const handleMouseLeave = () => {
-    console.log("mouse leave");
     x.set(0);
     y.set(0);
   };

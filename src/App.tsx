@@ -11,12 +11,13 @@ import { MdEmail } from "react-icons/md";
 
 import Skill from "./components/skill";
 import Timeline from "./Timeline";
+import HorizontalScrollCarousel from "./works";
 
 function App() {
   return (
     <>
       {/* TOP Banner */}
-      <div className="flex bg-dark-4 items-center justify-center h-screen">
+      <div className="flex bg-[#01071f] items-center justify-center h-screen">
         <motion.div
           className="text-center text-white space-y-4"
           initial={{ opacity: 0, y: -50 }}
@@ -31,7 +32,7 @@ function App() {
           </h1>
           <div className="flex justify-between text-base md:text-lg font-inter mt-2">
             <span className="font-extrabold uppercase tracking-wider">
-              Yerhanat
+              Yerqanat
             </span>
             <span className="font-medium tracking-[0.5em]">2024</span>
           </div>
@@ -43,7 +44,7 @@ function App() {
         {/* Profile picture  */}
         <div className="w-64 max-md:hidden lg:w-72 rounded-3xl overflow-hidden flex-shrink-0">
           <img
-            src="/public/profile.jpg"
+            src="profile.jpg"
             alt="Yerhanat"
             className="w-full object-cover"
           />
@@ -62,7 +63,7 @@ function App() {
               <p className="text-primary">
                 My name is{" "}
                 <span className="px-2 py-1 bg-gradient-to-r from-[#FF9D6C] to-[#BB4E75] font-bold font-poppins text-white">
-                  Yerhanat Yrymbai
+                  Yerqanat Yrymbai
                 </span>
                 . I specialize in software engineering and enjoy building
                 impactful solutions. I look forward to contributing my
@@ -213,7 +214,7 @@ function App() {
       </div>
 
       {/* Experience DETAILS */}
-      <div className="flex flex-col justify-center items-center bg-gray-900 text-white text-base pb-8 sm:text-lg pt-24">
+      <div className="flex flex-col justify-center items-center bg-[#01071f] text-white text-base pb-24 sm:text-lg pt-24">
         <h2 className="font-poppins font-extrabold text-5xl mb-12">
           MY EXPERIENCE
         </h2>
@@ -221,10 +222,11 @@ function App() {
       </div>
 
       {/* Latest works */}
-      <div className="flex flex-col justify-center items-center  text-primary text-base mt-12 py-8 sm:text-lg">
-        <h2 className="font-poppins font-extrabold text-5xl mb-12">
+      <div className="flex flex-col justify-center items-center bg-[#01071f] text-base py-24 sm:text-lg">
+        <h2 className="font-poppins font-extrabold text-5xl mb-24">
           LATEST WORKS
         </h2>
+        <HorizontalScrollCarousel />
       </div>
     </>
   );
