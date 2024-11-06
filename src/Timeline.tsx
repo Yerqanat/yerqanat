@@ -12,15 +12,6 @@ export default function Timeline({ defaultColor }: { defaultColor: string }) {
   return (
     <div>
       {experiences.map((element, index) => {
-        // Dynamic color classes workaround for Tailwind CSS
-        const colors: string[] = [
-          "bg-blue-500",
-          "bg-yellow-500",
-          "bg-purple-500",
-          "bg-orange-500",
-          "bg-green-500",
-          "bg-red-500",
-        ];
         const color = `bg-${element.color}-500` || defaultColor;
 
         return (
