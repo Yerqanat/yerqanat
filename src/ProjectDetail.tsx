@@ -1,9 +1,9 @@
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import { RiArrowGoBackFill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 
 export default function ProjectDetail() {
-  const { id } = useParams();
+  // const { id } = useParams();
   let navigate = useNavigate();
   return (
     <div className="flex flex-col text-primary relative pt-12 font-inter items-center">

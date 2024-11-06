@@ -65,9 +65,10 @@ function App() {
                 <span className="px-2 py-1 bg-gradient-to-r from-[#FF9D6C] to-[#BB4E75] font-bold font-poppins text-white">
                   Yerqanat Yrymbai
                 </span>
-                . I specialize in software engineering and enjoy building
-                impactful solutions. I look forward to contributing my
-                creativity and technical skills to innovative projects.
+                . I'm a software engineer focused on building impactful digital
+                solutions. I specialize in creating user-friendly applications
+                and efficient backend systems. I’m excited to work online and
+                contribute to projects that make a difference.
               </p>
               <p>Hope you enjoy my protfolio!</p>
 
