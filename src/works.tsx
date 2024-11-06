@@ -1,9 +1,12 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
 
-import { RiFlutterFill } from "react-icons/ri";
+import { FaTruckFast } from "react-icons/fa6";
 import { IoMdArrowDropdown } from "react-icons/io";
-import { IoLogoWechat } from "react-icons/io5";
+import { BiCameraMovie } from "react-icons/bi";
+import { FaCartShopping } from "react-icons/fa6";
+import { TiSocialInstagramCircular } from "react-icons/ti";
+import { SiWeb3Dotjs } from "react-icons/si";
 
 interface CardProps {
   card: {
@@ -21,10 +24,10 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["5%", "-45%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["5%", "-25%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] w-full">
+    <section ref={targetRef} className="relative h-[250vh] w-full">
       <div className="sticky top-12 flex h-screen overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
           {cards.map((card) => {
@@ -71,7 +74,7 @@ const cards = [
   {
     url: "alsat.jpg",
     title: "Alsat",
-    icon: <RiFlutterFill size="5em" className="text-[#7285bf]" />,
+    icon: <FaTruckFast size="5em" className="text-[#7285bf]" />,
     description:
       "Innovative logistics application designed to streamline supply chain management for businesses.",
     id: 1,
@@ -79,44 +82,32 @@ const cards = [
   {
     url: "alaman.jpg",
     title: "Alaman",
-    icon: <IoLogoWechat size="5em" className="text-[#7285bf]" />,
+    icon: <BiCameraMovie size="5em" className="text-[#7285bf]" />,
     description:
       "It's a versatile and interactive video streaming application designed for Weixin Mini Programs (微信小程序).",
     id: 2,
   },
   {
-    url: "alsat.jpg",
-    title: "Title 3",
-    icon: <RiFlutterFill size="5em" className="text-[#7285bf]" />,
-    description: "Description 1",
+    url: "mini-shop.jpg",
+    title: "Mini shop",
+    icon: <FaCartShopping size="5em" className="text-[#7285bf]" />,
+    description:
+      "It is a all-in-one e-commerce app designed to revolutionize your shopping experience.",
     id: 3,
   },
   {
-    url: "alsat.jpg",
-    title: "Title 4",
-    icon: <RiFlutterFill size="5em" className="text-[#7285bf]" />,
-    description: "Description 1",
+    url: "snapgram.png",
+    title: "snapgram",
+    icon: <TiSocialInstagramCircular size="5em" className="text-[#7285bf]" />,
+    description:
+      "It's a instagram clone that allows users to share photos and videos with friends.",
     id: 4,
   },
   {
-    url: "alsat.jpg",
-    title: "Title 5",
-    icon: <RiFlutterFill size="5em" className="text-[#7285bf]" />,
-    description: "Description 1",
+    url: "threejs.gif",
+    title: "3D protfolio",
+    icon: <SiWeb3Dotjs size="5em" className="text-[#7285bf]" />,
+    description: "It's a protfolio website that use Three.js to generate.",
     id: 5,
-  },
-  {
-    url: "alsat.jpg",
-    title: "Title 6",
-    icon: <RiFlutterFill size="5em" className="text-[#7285bf]" />,
-    description: "Description 1",
-    id: 6,
-  },
-  {
-    url: "alsat.jpg",
-    title: "Title 7",
-    icon: <RiFlutterFill size="5em" className="text-[#7285bf]" />,
-    description: "Description 1",
-    id: 7,
   },
 ];

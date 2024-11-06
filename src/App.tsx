@@ -222,12 +222,17 @@ function App() {
       </div>
 
       {/* Latest works */}
-      <div className="flex flex-col justify-center items-center bg-[#01071f] text-base py-24 sm:text-lg">
+      <div className="flex flex-col justify-center items-center bg-[#01071f] text-base pt-24 sm:text-lg">
         <h2 className="font-poppins font-extrabold text-5xl mb-24">
           LATEST WORKS
         </h2>
         <HorizontalScrollCarousel />
       </div>
+
+      {/* LIFE */}
+      {/* <div className="flex flex-col bg-[#01071f]">
+        <h2 className="font-poppins font-extrabold text-5xl mb-24">LIFE</h2>
+      </div> */}
     </>
   );
 }
